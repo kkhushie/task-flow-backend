@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <title>Taskflow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <nav class=" flex items-center py-5 px-16 justify-between border-b border-zinc-600 text-white mx-5">
+            <h1 class="text-3xl">Task<span class="font-[poppins] font-semibold text-violet-600">Flow</span>😉</h1>
+            <ul class="flex gap-5">
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/signup" class=" bg-violet-600 text-black px-3 py-1 rounded-md">Signup</a></li>
+                
+            </ul>
+        </nav>
+        <div class="p-10">
+
+            <!-- <a href="/" class="text-blue-500 mb-10 inline-block">Go back to home</a> -->
+            <h1 class="text-white text-4xl tracking-tighter font-semibold"><%= filename%></h1>
+            <p class="text-white font-light mt-2 text-xl">
+                <%= data%>
+            </p>
+        </div>
+    </div>
+    <script src="javascripts/script.js"></script>
+</body>
+
+</html>
